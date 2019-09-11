@@ -20,7 +20,8 @@ export default class Component extends React.Component {
     this.state = {
       email: '',
       password: '',
-      label: ''
+      label: '',
+      secure: true
     };
   }
   _signIn = async () => {
@@ -62,6 +63,7 @@ export default class Component extends React.Component {
           onChangeText={email => this.setState({ email })}
         />
         <Input
+          secure={this.state.secure}
           label={this.state.label}
           placeholder={I18n.t('password')}
           editable

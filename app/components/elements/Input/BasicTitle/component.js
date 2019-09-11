@@ -32,7 +32,7 @@ export default class Component extends React.Component {
   };
 
   render() {
-    const { placeholder, label, editable, errorMessage, maxLength, optional, type } = this.props;
+    const { placeholder, label, editable, errorMessage, maxLength, optional, type, secure } = this.props;
     const { value, errorMessageTemp } = this.state;
     const errorMessageTemplate = errorMessage || errorMessageTemp;
     let containerTextInputStyle = styles.containerStyle(type);
@@ -49,6 +49,7 @@ export default class Component extends React.Component {
         </View>
         <View style={containerTextInputStyle}>
           <TextInput
+            secureTextEntry={secure}
             style={styles.textInputStyle(type)}
             onBlur={this.handleBlur}
             value={value}
@@ -75,7 +76,8 @@ Component.propTypes = {
   errorMessage: PropTypes.string,
   onValidation: PropTypes.func,
   optional: PropTypes.string,
-  type: PropTypes.oneOf([TYPES.FILLED, TYPES.GHOST])
+  type: PropTypes.oneOf([TYPES.FILLED, TYPES.GHOST]),
+  secure: PropTypes.bool
 };
 
 Component.defaultProps = {
@@ -86,5 +88,6 @@ Component.defaultProps = {
   errorMessage: null,
   onValidation: noop,
   optional: '',
-  type: TYPES.GHOST
+  type: TYPES.GHOST,
+  secure: false
 };
