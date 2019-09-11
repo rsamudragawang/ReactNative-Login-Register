@@ -1,0 +1,39 @@
+{
+  "appName":"Go Green",
+  "appVersion":"v.1.1",
+  "appDesc": "Green is Life, Life is Green",
+  "camera": "Kamera",
+  "cancel": "Kembali",
+  "checkConnection": "Tidak ada koneksi. \nCek Koneksi internet anda.",
+  "country": "negara",
+  "email": "Email",
+  "error" : {
+    "timeOutConnection": "Koneksi timeout. silahkan coba beberapa saat lagi."
+  },
+  "forgetPass": "Lupa Sandi",
+  "gallery": "Galeri",
+  "haveAccount": "Sudah punya akun? Sign In",
+  "loading": "Loading ...",
+  "login": "Masuk",
+  "oops": "Oops!",
+  "password": "Password",
+  "phoneNumber": "Nomor telepon",
+  "pleaseTryAgain": "Silahkan coba lagi",
+  "rememberMe": "Remember me",
+  "selectDate": "Pilih Tanggal : ",
+  "selectFrom": "Pilih Dari : ",
+  "signUp": "Daftar",
+  "submit": "Submit",
+  "tryAgain": "Coba Lagi",
+  "update": "Perbarui",
+  "updateBody": "Harap perbarui aplikasi ke versi baru, \n untuk mendapatkan konten-konten terbaru",
+  "updateTitle": "Perbarui",
+  "onBoarding": {
+    "title1": "Study",
+    "desc1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "title2": "On Hand",
+    "desc2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "title3": "Achieve",
+    "desc3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }  
+}
